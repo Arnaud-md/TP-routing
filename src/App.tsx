@@ -7,17 +7,26 @@ import {
   createBrowserRouter
 } from "react-router-dom";
 import About from './About';
+import Connexion from './Connexion';
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Connexion />,
     },
     {
       path: "/about",
       element: <About />,
+    },
+    {
+      path: "/connexion",
+      element: <Connexion />,
+    },
+    {
+      path: "/home",
+      element: <Home />,
     }
   ]);
 
